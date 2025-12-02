@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>كشف الاستحقاق 2026 | TC Garments</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <h1>T&C Garments</h1>
+      <p class="subtitle">كشف الاستحقاقات الشهري</p>
+    </header>
+
+    <div class="container">
+      <div class="card">
+        <h2>✨ ابحث عن كشف مرتبك الشهري</h2>
+        <input type="text" id="name" placeholder="الاسم الرباعي">
+        <input type="text" id="nid" placeholder="الرقم القومي">
+        <input type="text" id="code" placeholder="كود الموظف">
+        <input type="text" id="secretcode" placeholder="الرقم السري" type="password">
+        <div style="text-align:center; margin-top:25px;">
+          <button id="btnSearch" class="btn primary">🚀 عرض الكشف الآن</button>
+		  <br><br>
+          <button id="btnClear" class="btn" style="background:rgba(139,0,0,0.5); color:white; margin-top:10px;">🗑️ مسح البيانات</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="resultPanel"></div>
+
+    <footer class="modern-footer">
+      <p>© 2026 TC Garments × Kadysoft Ltd • كل الحقوق محفوظة</p>
+      <a href="#" onclick="openExternalLink('https://wa.me/201555266002')" class="support-btn">
+        💬 تواصل مع الدعم الفني (واتساب)
+      </a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function openExternalLink(url) {
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>

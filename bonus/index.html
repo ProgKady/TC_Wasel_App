@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>بونص TC Garments</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <h1>T&C Garments</h1>
+      <p class="subtitle">البونص نزل؟</p>
+    </header>
+
+    <div class="container">
+      <div class="card">
+        <h2>ادخل بياناتك يا كبير</h2>
+        <input type="text" id="name" placeholder="الاسم الرباعي">
+        <input type="text" id="nid" placeholder="الرقم القومي">
+        <input type="text" id="code" placeholder="كود الموظف">
+        <select id="sheetType">
+          <option value="Regular">البونص الشهري</option>
+        </select>
+        <input type="password" id="email" placeholder="الرقم السري">
+        <div style="text-align:center; margin-top:25px;">
+          <button id="btnSearch" class="btn primary">عرض البونص دلوقتي</button>
+		  <br><br>
+          <button id="btnClear" class="btn ghost">مسح الكل</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="resultPanel"></div>
+
+    <footer class="modern-footer">
+      <p>© 2026 TC Garments × Kadysoft Ltd</p>
+      <a href="#" onclick="openExternalLink('https://wa.me/201555266002')" class="support-btn">
+        تواصل مع الدعم الفني
+      </a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function openExternalLink(url) {
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>
