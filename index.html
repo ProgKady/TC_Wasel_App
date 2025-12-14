@@ -180,15 +180,17 @@ footer{
   <a href="#" onclick="openExternalLink('https://wa.me/201555266002')" class="support-btn">الدعم الفني (واتساب)</a>
 </footer>
 
-<!-- باقي السكربتات زي ما هي -->
-<script>
-setInterval(()=>{const d=document.createElement('div');d.classList.add('dot');d.style.left=Math.random()*100+'vw';d.style.animationDuration=(Math.random()*8+10)+'s';document.getElementById('bg').appendChild(d);setTimeout(()=>d.remove(),20000);},350);
-</script>
 <script>
 function openExternalLink(url) {
   window.location.href = "intent://" + url.replace(/^https?:\/\//, '') + "#Intent;package=com.android.chrome;scheme=https;end;";
 }
 </script>
+
+<!-- باقي السكربتات زي ما هي -->
+<script>
+setInterval(()=>{const d=document.createElement('div');d.classList.add('dot');d.style.left=Math.random()*100+'vw';d.style.animationDuration=(Math.random()*8+10)+'s';document.getElementById('bg').appendChild(d);setTimeout(()=>d.remove(),20000);},350);
+</script>
+
 <script>
 const API_URL = "https://corsproxy.io/?" + encodeURIComponent("https://script.google.com/macros/s/AKfycby8B5XNXUvcTgeeQjgd4aHxyonwqQvN21sHQ0Uy4RAn92opu1hxaULfTmaGDhMSMswfDw/exec");
 const nameInput = document.getElementById("name");
